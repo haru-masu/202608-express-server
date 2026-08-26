@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート</title>
+</head>
+
+<body>
+
+    <h1>アンケート</h1>
+
+    <form action="/questionnaire" method="post">
+
+        <p>
+            名前：
+            <input type="text" name="name" required>
+        </p>
+
+        <p>
+            満足度：
+
+            <select name="satisfaction" required>
+                <option value="">選択してください</option>
+                <option value="5">5：とても満足</option>
+                <option value="4">4：満足</option>
+                <option value="3">3：普通</option>
+                <option value="2">2：やや不満</option>
+                <option value="1">1：不満</option>
+            </select>
+
+        </p>
+
+        <p>
+            コメント：<br>
+
+            <textarea
+                name="comment"
+                rows="5"
+                cols="40">
+            </textarea>
+        </p>
+
+        <button type="submit">
+            送信
+        </button>
+
+    </form>
+
+</body>
+</html>

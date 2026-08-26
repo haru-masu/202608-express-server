@@ -6,11 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><%= title %></h1>
-    <ul>
-        <% lists.forEach((list)=>{%>
-            <li><%= list  %></li>
-        <%}) %>
-    </ul>
+
+    <h1>マイページ</h1>
+
+    <p>
+        ID <%= userId %><br>
+    </p>
+
+    <p>
+        PW <%= userPassword %><br>
+    </p>
+
+    <p>
+        <a href="./login">ログイン</a>
+    </p>
+
 </body>
 </html>
