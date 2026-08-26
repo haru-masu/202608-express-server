@@ -10,9 +10,13 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello, Express + TypeScript World!');
 });
 
-//ルーティング /test
+//ルーティングを追加
 app.get('/test', (req: Request, res: Response) => {
-  res.send('test ページです');
+  const data = {
+    'title' : 'タイトル',
+    'lists': ['リスト1','リスト2','リスト2','リスト2']
+  }
+  res.render('test.ejs',data);
 });
 
 
